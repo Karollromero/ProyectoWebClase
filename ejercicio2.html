@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo formulario # 1</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Your details</legend>
+        <ol>
+            <form action="">
+                <li>
+                    <label for="name">Name</label>&emsp;<input type="text" name="name" required
+                        placeholder="First and last name">
+                </li><br>
+                <li>
+                    <label for="email">Email</label>&emsp;<input type="email" name="email" maxlength="30" required
+                        placeholder="example@domain.com">
+                </li><br>
+                <li>
+                    <label for="phone">Phone</label>&emsp;<input type="text" name="phone" required
+                        placeholder="Eg. +447500000000">
+                </li>
+        </ol>
+    </fieldset>
+    <fieldset>
+
+        <legend>Delivery addres</legend>
+        <ol>
+            <form action=""></form>
+            <li>
+                <label for="addres">Addres</label>
+                <textarea rows="5" cols="30"></textarea>
+            </li><br>
+            <li>
+                <label for="post code">Post code</label>
+                <input type="number" name="post code" min="6" max="8">
+            </li><br>
+            <li>
+                <label for="country">Country</label>
+                <input type="text" name="country">
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <legend>Card details</legend>
+        <ol>
+            <li>
+                <fieldset>
+                    <legend>Card type</legend>
+                    <ol>
+                        <li><input type="radio" name="Tipo de tarjeta">VISA</li>
+                        <li><input type="radio" name="Tipo de tarjeta">AmEX</li>
+                        <li><input type="radio" name="Tipo de tarjeta">Mastercard</li>
+                    </ol>
+                </fieldset>
+            </li><br>
+            <form action=""></form>
+            <li>
+                <label for="card Number">Card Number</label>
+                <input type="number" name="card number" min="1" max="3">
+            </li><br>
+            <li>
+                <label for="security code">Security code</label>
+                <input type="text" name="security code" required pattern="R.+">
+            </li><br>
+            <li>
+                <label for="name_card">Name on card</label>
+                <input type="text" name="name on card" required placeholder="Exact name as on the card">
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <legend></legend>
+        <button type="submit">Buy it!</button>
+    </fieldset>
+    </form>
+
+</body>
+
+</html>
